@@ -1,0 +1,66 @@
+#edit_article
+  .wrapper
+    height: auto
+    overflow: hidden
+    margin-top: 20px
+    width: 1002px
+    .field
+      color: $color
+    #description_input
+      height: 160px
+      textarea
+        height: 155px
+        resize: none
+  .container
+    width: 100%
+    height: auto
+    padding: 10px
+    text-align: center
+    #title
+      height: 25px
+      padding: 0 5px
+      border-bottom: solid 1px #888
+      li
+        list-style-type: none
+        height: 25px
+        width: 16.66%
+        overflow: hidden
+        box-sizing: border-box
+        float: left
+        text-align: left
+        span
+          position: relative
+          bottom: 2px
+          left: 5px
+          color: $header_color
+          font-size: 15px
+    #status
+      margin: 10px 5px
+      padding: 0 5px
+      height: 80px
+      li
+        list-style-type: none
+        display: none
+        text-align: left
+
+  .img
+    text-align: center
+    box-sizing: content-box
+    border: solid 1px $border_color
+    border-radius: 4px
+    margin: 10px
+    float: left
+    padding: 9px
+    width: 205px
+    height: 205px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+    #close
+      display: none
+    .main_image
+      width: 205px
+      max-height: 205px
+    .main_image:hover
+      cursor: pointer

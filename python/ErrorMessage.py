@@ -1,0 +1,7 @@
+fields = 'Incorrect some fields'
+login = 'Incorrect password or login'
+location = 'Incorrect location'
+wrong = 'Something goes wrong. Maybe some fields are incorrect. Please connect with administrations'
+load = 'not loaded'
+change = 'Somefing change on site. Please connect with administrations'
+not_found = 'Article not found'

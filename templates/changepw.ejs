@@ -1,0 +1,31 @@
+<% layout('./layout/head')%>
+<% block("title", "Изменение пароля HouseRielt")%>
+<div class="modal"></div>
+<div id="changepw">
+    <div class="wrapper">
+        <h2>Изменение пароля</h2>
+        <br>
+        <h3 id="ms">Новый пароль:</h3>
+        <div class="inner">
+            <div id="password_input" class="input">
+                <form>
+                    <input type="password" class="field">
+                </form>
+            </div>
+            <span class="message">Пароль слишком короткий</span>
+        </div>
+        <h5 class="description">Длина как минимум 6 символов</h5>
+        <h3>Подтверждение пароля:</h3>
+        <div class="inner">
+            <div id="password_confirm" class="input">
+                <form>
+                    <input type="password" class="field">
+                </form>
+            </div>
+            <span class="message">Пароли не совпадают</span>
+        </div>
+        <div class="submit" id="submit_changepw">
+            <h3>Подтвердить</h3>
+        </div>
+    </div>
+</div>

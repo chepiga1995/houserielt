@@ -1,0 +1,45 @@
+{
+  "port": 3000,
+  "host": "localhost",
+  "out_host": "localhost",
+  "path": "/home/user/houserielt",
+  "article_on_page": 20,
+  "mongoose": {
+    "uri": "mongodb://localhost/house",
+    "options": {
+      "server": {
+        "socketOption": {
+          "keepAlive": 1
+        }
+      }
+    }
+  },
+  "session": {
+    "name": "sid",
+    "secret": "test",
+    "cookie": {
+      "maxAge": 1370880000
+    }
+  },
+  "mail":{
+    "service": "Gmail",
+    "email": "exemple@gmail.com",
+    "password": "test"
+  },
+  "sendCode": {
+    "key": "HotKet",
+    "password": "test"
+  },
+  "change_password": {
+    "password": "test"
+  },
+  "account":{
+    "password": "test"
+  },
+  "article":{
+    "password": "test"
+  },
+  "user": {
+    "password": "test"
+  }
+}

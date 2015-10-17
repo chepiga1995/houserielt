@@ -1,0 +1,98 @@
+<% layout('./layout/head')%>
+<% block("title", "Accounts HouseRielt")%>
+<% block("n1", "")%>
+<% block("n2", "")%>
+<% block("n3", " selected")%>
+<div id="manage_acc">
+    <div class="modal"></div>
+    <%- partial("./partials/header")%>
+    <div id="accounts">
+        <h2>Все учетные записи</h2>
+        <br>
+        <div id="inner1">
+            <div id="inner">
+                <div class="container" id="olx.ua">
+                    <h3>olx.ua</h3>
+                    <ul>
+                        <li class="empty">пустой</li>
+                    </ul>
+                </div>
+                <div class="container" id="fn.ua">
+                    <h3>fn.ua</h3>
+                    <ul>
+                        <li class="empty">пустой</li>
+                    </ul>
+                </div>
+                <div class="container" id="aviso.ua">
+                    <h3>aviso.ua</h3>
+                    <ul>
+                        <li class="empty">пустой</li>
+                    </ul>
+                </div>
+                <div class="container" id="address.ua">
+                    <h3>address.ua</h3>
+                    <ul>
+                        <li class="empty">пустой</li>
+                    </ul>
+                </div>
+                <div class="container" id="mirkvartir.ua">
+                    <h3>mirkvartir.ua</h3>
+                    <ul>
+                        <li class="empty">пустой</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="add_account">
+        <br>
+        <h2>Добавить учетную запись</h2>
+        <br>
+        <div class="wrapper">
+            <h3>Сайт:</h3>
+            <div class="inner">
+                <div id="site_input" class="input">
+                    <form>
+                        <select class="field">
+                            <option value="olx.ua">olx.ua</option>
+                            <option value="fn.ua">fn.ua</option>
+                            <option value="aviso.ua">aviso.ua</option>
+                            <option value="address.ua">address.ua</option>
+                            <option value="mirkvartir.ua">mirkvartir.ua</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <h3 id="ms">Адрес электронной почты:</h3>
+            <div class="inner">
+                <div id="username_input" class="input">
+                    <form>
+                        <input name="username"  class="field" >
+                    </form>
+                </div>
+            </div>
+            <br>
+            <h3>Пароль:</h3>
+            <div class="inner">
+                <div id="password_input" class="input">
+                    <form>
+                        <input type="password" class="field" >
+                    </form>
+                </div>
+            </div>
+            <br>
+            <h3>Телефон:</h3>
+            <div class="inner">
+                <div id="telephone_input" class="input">
+                    <form>
+                        <input class="field" >
+                    </form>
+                </div>
+            </div>
+            <div class="submit" id="submit_manage_acc">
+                <h3>Добавить</h3>
+            </div>
+        </div>
+    </div>
+</div>

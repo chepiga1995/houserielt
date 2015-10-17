@@ -1,0 +1,71 @@
+#header
+  background-color: $bg_color
+  width: 100%
+  height: 50px
+  max-width: 1600px
+  margin: auto
+  #navigation
+    width: 70%
+    height: 45px
+    margin-top: 5px
+    float: left
+    .container
+      width: 33.33%
+      height: 45px
+      float: left
+      span
+        display: inline-block
+        text-align: center
+        padding-top: 7px
+        width: 100%
+        font-weight: bold
+        color: #444
+        font-family: Myriad Pro
+        font-size: 18px
+    .selected
+      background-color: white
+      border-top-right-radius: 10px
+      border-top-left-radius: 10px
+    .container:hover
+      cursor: pointer
+    .selected:hover
+      cursor: default
+  #user
+    width: 30%
+    height: 50px
+    float: right
+    .min_prog:hover
+      cursor: pointer
+    .min_prog
+      width: 65%
+      height: 50px
+      float: left
+      padding: 0 10px
+      h3
+        text-align: center
+        margin: 2px 0
+      h5
+        float: right
+        margin: 2px 15px
+      .inner
+        border: $border_color 1px solid
+        width: 100%
+        height: 13px
+        margin: 0
+        .prog
+          background-color: green
+          width: 100%
+          height: 13px
+          float: left
+    #logout
+      width: 35%
+      height: 50px
+      float: left
+      text-align: center
+      span
+        display: inline-block
+        padding-top: 13px
+        font-size: 16px
+        font-weight: bold
+      span:hover
+        cursor: pointer

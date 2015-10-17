@@ -1,0 +1,89 @@
+<% layout('./layout/head')%>
+<% block("title", "Регистрация HouseRielt")%>
+<div class="modal"></div>
+<div id="reg">
+    <div class="wrapper">
+        <h2>регистрация</h2>
+        <br>
+        <h3 id="ms">Адрес электронной почты:</h3>
+        <div class="inner">
+            <div id="username_input" class="input">
+                <form>
+                    <input name="username" class="field" >
+                </form>
+            </div>
+            <span class="message">Не действительный адрес электронной почты</span>
+        </div>
+        <h5 class="description">Например: user123@gmail.com</h5>
+        <h3>Имя:</h3>
+        <div class="inner">
+            <div id="name_input" class="input">
+                <form>
+                    <input class="field" >
+                </form>
+            </div>
+            <span class="message">Введите Ваше Имя</span>
+        </div>
+        <br>
+        <br>
+        <h3>Пароль:</h3>
+        <div class="inner">
+            <div id="password_input" class="input">
+                <form>
+                    <input type="password"  class="field" >
+                </form>
+            </div>
+            <span class="message">Пароль слишком короткий</span>
+        </div>
+        <h5 class="description">Длина как минимум 6 символов</h5>
+        <h3>Подтверждение пароля:</h3>
+        <div class="inner">
+            <div id="password_confirm" class="input">
+                <form>
+                    <input type="password" class="field" >
+                </form>
+            </div>
+            <span class="message">Пароли не совпадают</span>
+        </div>
+        <br>
+        <br>
+        <h3>Код приглашения:</h3>
+        <div class="inner">
+            <div id="invitation_input" class="input">
+                <form>
+                    <input class="field" >
+                </form>
+            </div>
+            <span class="message">Введен некорректный код</span>
+        </div>
+        <h5 class="description">Были отправлены на электронную почту</h5>
+        <br>
+        <h3>Ваш телефон:</h3>
+        <div class="inner">
+            <div id="telephone_input" class="input">
+                <form>
+                    <input class="field" >
+                </form>
+            </div>
+        </div>
+        <h5 class="description">Это телефон будет использоваться в качестве шаблона в статьях</h5>
+        <br>
+        <h3>Ваш Skype:</h3>
+        <div class="inner">
+            <div id="skype_input" class="input">
+                <form>
+                    <input class="field" >
+                </form>
+            </div>
+        </div>
+        <h5 class="description">Это Skype будет использоваться в качестве шаблона в статьях</h5>
+        <div id="confirm" class="check">
+            <form>
+                <input type="checkbox" class="point"><span>Согласен с правилами</span>
+            </form>
+        </div>
+        <div id="submit_reg" class="submit">
+            <h3>зарегистрироваться</h3>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+#manage_acc
+  max-width: 1600px
+  margin: auto
+  h2
+    font-size: 20px
+    padding-bottom: 10px
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+  #accounts
+    padding-top: 20px
+    width: 100%
+    background-color: white
+    height: auto
+    #inner1
+      margin-top: 5px
+      overflow-x: auto
+      padding-bottom: 20px
+      #inner
+        width: auto
+        height: 150px
+        min-width: 1600px
+        .container
+          float: left
+          width: 20%
+          min-height: 100px
+          height: auto
+          box-shadow: inset 0px 0px 0px 1px #e7e7e7
+          text-align: center
+          h3
+            font-size: 19px
+            margin: 5px auto
+            border-bottom: solid 1px #e7e7e7
+            width: 100%
+            color: $color
+          ul
+            text-align: left
+            font-size: 15px
+            margin-left: 0px
+            padding: 10px 5px
+            li
+              list-style-type: none
+              padding: 5px 5px
+              margin: 3px 0
+              height: 30px
+            .account:hover
+              box-shadow: inset 0 0 0 2px #bbb
+              cursor: default
+            .empty
+              text-align: center
+              margin-top: 10px
+            .account
+              color: #4883E7
+              p
+                width: 70%
+                overflow-x: hidden
+                float: left
+              div
+                width: 30%
+                text-align: right
+                float: right
+              img
+                width: 20px
+                height: 20px
+                margin: 0 5px
+                display: none
+              img:hover
+                cursor: pointer
+            .popover-content
+              word-break: break-all
+  #add_account
+    background-color: white
+    padding-bottom: 5px
+    width: 100%
+    .wrapper
+      width: 405px
+      height: 480px
+      margin-top: 5px
+      margin-bottom: 50px
+      margin-left: auto
+      margin-right: auto

@@ -1,0 +1,80 @@
+#manage_posting
+  display:    none
+  position:   fixed
+  z-index:    900
+  top:        0
+  left:       0
+  height:     100%
+  width:      100%
+  background: rgba( 180, 180, 180, .8 )
+  .wrapper
+    height: auto
+    position: relative
+    width: 1000px
+    margin-top: 40px
+    padding: 5px
+    #inner
+      overflow: hidden
+      height: auto
+      width: 100%
+      text-align: left
+    .container > h3
+      border-bottom: 1px solid $border_color
+      margin: 5px
+      text-align: center
+    .container
+      box-sizing: border-box
+      text-align: left
+      width: 20%
+      float: left
+      border: 1px solid $border_color
+      .email
+        overflow: hidden
+        color: $color_blue
+        padding: 3px 0
+        font-size: 14px
+      .inner
+        margin: 5px 0
+        min-height: 30px
+        .input
+          width: 180px
+          height: 25px
+        .field
+          width: 166px
+          height: 20px
+          font-size: 14px
+          color: $color_blue
+    .submit
+      float: left
+      margin-left: 150px
+      margin-bottom: 30px
+.act
+  display: block
+  padding: 0
+  margin-top: 10px
+  margin-left: auto
+  margin-right: auto
+  width: 100px
+  height: 25px
+  border: solid 1px $border_color
+  border-radius: 5px
+  h3
+    font-size: 11px
+    font-weight: bold
+    margin: 0
+    font-family: Impact, fantasy
+    text-transform: uppercase
+    padding-top: 5px
+    color: $header_color
+    text-align: center
+.act:hover
+  cursor: pointer
+.add
+  background-color: #66c133
+.remove
+  background-color: #e33d1a
+.active
+  background-color: #66c133
+.deactivate
+  background-color: #e3cc1a
+

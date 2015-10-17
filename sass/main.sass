@@ -1,0 +1,99 @@
+#main, #edit_article, #add
+  max-width: 1600px
+  margin: auto
+  #search, #articles, #edit
+    background-color: white
+    min-height: 100px
+    border-bottom: solid 3px #919191
+  h2
+    font-size: 20px
+    padding-bottom: 10px
+    padding-top: 20px
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+    text-shadow: #fff 2px 2px 2px
+  #search_options
+    width: 980px
+    margin: auto
+    .col1, .col2
+      width: 50%
+      float: left
+    .half
+      width: 50%
+      float: left
+      .input
+        width: 100px
+      .url
+        width: 86px
+      .from, .to
+        float: left
+        padding-right: 10px
+        font-size: 16px
+        padding-top: 5px
+    .submit
+      position: static
+      clear: both
+      margin-top: 30px
+
+    .wrapper
+      width: 850px
+      margin: 20px auto 30px auto
+      height: 710px
+      .input .field
+        color: $color
+  #articles
+    margin-bottom: 100px
+    #table
+      width: 100%
+      table
+        width: 100%
+        tr
+          width: 100%
+          th, td
+            width: 5.5%
+            border-bottom: solid 1px gray
+            box-sizing: border-box
+            text-align: center
+            font-size: 15px
+            overflow: hidden
+            color: #777
+            padding: 5px 10px
+            input
+              width: 18px
+              height: 18px
+          th
+            border-right: solid 1px lightgray
+            font-weight: bold
+            color: #555
+            margin: 8px 0
+            p
+              float: left
+            div
+              float: right
+            img
+              width: 20px
+              height: 20px
+              margin-left: 7px
+              margin-top: 3px
+            img:hover
+              cursor: pointer
+          td:nth-child(1)
+            text-align: left
+          th:nth-child(1)
+            text-align: left
+          .big
+            width: 16%
+          .medium
+            width: 9.5%
+        tr:hover
+          cursor: pointer
+          background-color: #ddd
+        #head
+          cursor: default
+          background-color: white
+
+.help
+  width: 100%
+  clear: both
+  height: 1px

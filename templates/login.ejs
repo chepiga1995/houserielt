@@ -1,0 +1,34 @@
+<% layout('./layout/head')%>
+<% block("title", "Авторизация HouseRielt")%>
+<div id="login">
+    <div class="wrapper">
+        <h2>авторизация</h2>
+        <div class="inner">
+            <div id="username_input" class="input">
+                <form>
+                    <input name="email" type="email" class="field" placeholder="E-mail адрес" >
+                    <img id="url_user" src="../img/mailicon.png" alt="">
+                </form>
+            </div>
+        </div>
+        <div class="inner">
+            <div id="password_input" class="input">
+                <form>
+                    <input type="password" name="password" class="field" placeholder="•••••••">
+                    <img id="url_password" src="../img/passicon.png" alt="">
+                </form>
+            </div>
+        </div>
+        <div class="submit" id="submit_login">
+          <h3>sign in</h3>
+        </div>
+        <div class="container">
+            <div class="half">
+                <a href="/pas">Забыли пароль?</a>
+            </div>
+            <div class="half">
+                <a href="/reg">Еще не зарегистрированы?</a>
+            </div>
+        </div>
+    </div>
+</div>

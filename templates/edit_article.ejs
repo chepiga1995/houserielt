@@ -1,0 +1,338 @@
+<% layout('./layout/head')%>
+<% block("title", "HouseRielt")%>
+<% block("n1", "")%>
+<% block("n2", "")%>
+<% block("n3", "")%>
+<div id="edit_article">
+    <div class="modal"></div>
+    <%- partial("./partials/header")%>
+    <%- partial("./partials/img")%>
+    <div id="edit">
+        <h2>Редактировать статью</h2>
+        <br>
+        <div class="wrapper">
+            <div class="half">
+                <h3 id="ms">Адрес<span class="green">*</span>:</h3>
+                <div class="inner">
+                    <div id="address_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Имя владельца:</h3>
+                <div class="inner">
+                    <div id="name_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Телефон владельца:</h3>
+                <div class="inner">
+                    <div id="telephone_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Сайт<span class="red">*</span>:</h3>
+                <div class="inner">
+                    <div id="site_input" class="input">
+                        <form>
+                            <select class="field">
+                                <option value=""></option>
+                                <option value="olx.ua">olx.ua</option>
+                                <option value="fn.ua">fn.ua</option>
+                                <option value="aviso.ua">aviso.ua</option>
+                                <option value="address.ua">address.ua</option>
+                                <option value="mirkvartir.ua">mirkvartir.ua</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Тип<span class="red">*</span>:</h3>
+                <div class="inner">
+                    <div id="type_input" class="input">
+                        <form>
+                            <select class="field">
+                                <option value=""></option>
+                                <option value="0">Оренда</option>
+                                <option value="1">Продажа</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Тип здания<span class=""></span>:</h3>
+                <div class="inner">
+                    <div id="building_type_input" class="input">
+                        <form>
+                            <select class="field">
+                                <option value=""></option>
+                                <option value="0">Кирпичный</option>
+                                <option value="1">Панельный</option>
+                                <option value="2">Монолитный</option>
+                                <option value="3">Блочный</option>
+                                <option value="4">Деревянный</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Заглавие<span class="red">*</span>:</h3>
+                <div class="inner">
+                    <div id="title_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Город<span class="green">*</span>:</h3>
+                <div class="inner">
+                    <div id="city_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Имя<span class="green">*</span>:</h3>
+                <div class="inner">
+                    <div id="per_name_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Телефон<span class="green">*</span>:</h3>
+                <div class="inner">
+                    <div id="per_telephone_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Расстояние до ближайшего города<span class=""></span>:</h3>
+                <div class="inner">
+                    <div id="remote_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Skype<span class="green">*</span>:</h3>
+                <div class="inner">
+                    <div id="skype_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="half">
+                <h3>Общая площадь<span class=""></span>:</h3>
+                <div class="inner">
+                    <div id="full_square_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Жилая площадь<span class=""></span>:</h3>
+                <div class="inner">
+                    <div id="live_square_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Площадь кухни<span class=""></span>:</h3>
+                <div class="inner">
+                    <div id="kitchen_square_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Количество комнат<span class=""></span>:</h3>
+                <div class="inner">
+                    <div id="rooms_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Цена<span class="red">*</span>:</h3>
+                <div class="inner">
+                    <div id="price_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Валюта<span class="red">*</span>:</h3>
+                <div class="inner">
+                    <div id="cur_price_input" class="input">
+                        <form>
+                            <select class="field">
+                                <option value=""></option>
+                                <option value="0">&#8372;</option>
+                                <option value="1">&#36;</option>
+                                <option value="2">&#8364;</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Этаж<span class=""></span>:</h3>
+                <div class="inner">
+                    <div id="floor_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Этажность дома<span class=""></span>:</h3>
+                <div class="inner">
+                    <div id="max_floor_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Район<span class="red">*</span>:</h3>
+                <div class="inner">
+                    <div id="location_input" class="input">
+                        <form>
+                            <select class="field">
+                                <option value=""></option>
+                                <option value="" disabled>==Киев:</option>
+                                <option value="0">Голосеевский район</option>
+                                <option value="1">Дарницкий район</option>
+                                <option value="2">Деснянский район</option>
+                                <option value="3">Днепровский район</option>
+                                <option value="4">Оболонский район</option>
+                                <option value="5">Печерский район</option>
+                                <option value="6">Подольский район</option>
+                                <option value="7">Святошинский район</option>
+                                <option value="8">Соломенский район</option>
+                                <option value="9">Шевченковский район</option>
+                                <option value="" disabled>==Киевская область:</option>
+                                <option value="10">Барышевский район</option>
+                                <option value="11">Белоцерковский район</option>
+                                <option value="12">Богуславский район</option>
+                                <option value="13">Бориспольский район</option>
+                                <option value="14">Бородянский район</option>
+                                <option value="15">Броварской район</option>
+                                <option value="16">Васильковский район</option>
+                                <option value="17">Володарский район</option>
+                                <option value="18">Вышгородский район</option>
+                                <option value="19">Згуровский район</option>
+                                <option value="20">Иванковский район</option>
+                                <option value="21">Кагарлыкский район</option>
+                                <option value="22">Киево-Святошинский район</option>
+                                <option value="23">Макаровский район</option>
+                                <option value="24">Мироновский район</option>
+                                <option value="25">Обуховский район</option>
+                                <option value="26">Переяслав-Хмельницкий район</option>
+                                <option value="27">Полесский район</option>
+                                <option value="28">Ракитнянский район</option>
+                                <option value="29">Сквирский район</option>
+                                <option value="30">Ставищенский район</option>
+                                <option value="31">Таращанский район</option>
+                                <option value="32">Тетиевский район</option>
+                                <option value="33">Фастовский район</option>
+                                <option value="34">Яготинский район</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <h3>Сдается с<span class="red">*</span>:</h3>
+                <div class="inner">
+                    <div id="rent_from_input" class="input">
+                        <form>
+                            <input class="field" >
+                        </form>
+                    </div>
+                </div>
+                <h5 class="description">For example: 2015-06-12</h5>
+                <br>
+                <h3>Описание<span class="red">*</span>:</h3>
+                <div class="inner">
+                    <div id="description_input" class="input">
+                        <form>
+                            <textarea class="field"></textarea>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="help"></div>
+            <div class="container">
+                <br>
+                <h3>Категория<span class="red">*</span>:</h3>
+                <br>
+                <div class="inner">
+                    <div id="category_input" class="input">
+                        <form>
+                            <select class="field">
+                                <option value=""></option>
+                                <option value="0">Квартири</option>
+                                <option value="1">Будинки</option>
+                                <option value="2">Кімнати</option>
+                                <option value="3">Земля</option>
+                                <!--<option value="4">Гаражі / Стоянки</option>-->
+                                <!--<option value="5">Приміщення</option>-->
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="inner" style="display: none;">
+                    <div id="sub_category_input" class="input" >
+                        <form>
+                            <select class="field">
+                                <option value=""></option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <br>
+                <h3>Изображения<span class="green">*</span>:</h3>
+                <br>
+
+                <div class="img add_image">
+                    <img src="../img/add.png" id="add_img" class="main_image">
+                    <form id="file" enctype="multipart/form-data">
+                        <input type="file" style="display: none">
+                    </form>
+                </div>
+
+            </div>
+            <div class="submit" id="submit_save">
+                <h3>Сохранить</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
